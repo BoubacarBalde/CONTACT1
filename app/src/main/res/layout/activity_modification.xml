@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".Modification">
+
+    <ImageView
+        android:id="@+id/idImgg"
+        android:layout_width="177dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="47dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/vendeur"
+        app:layout_constraintBottom_toTopOf="@+id/idnom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/idnom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FBF9F9"
+        android:ems="10"
+        android:hint="Nom Prénom"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idImgg" />
+
+    <EditText
+        android:id="@+id/idtelephone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FBF9F9"
+        android:ems="10"
+        android:hint="Tel :"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idnom" />
+
+    <Button
+        android:id="@+id/idbntModifier"
+        android:layout_width="131dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="145dp"
+        android:backgroundTint="@color/teal_202"
+        android:text="Modifier"
+        app:layout_constraintBottom_toTopOf="@+id/idnom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idImgg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="115dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/idnom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idImgg"
+        app:layout_constraintTop_toBottomOf="@+id/idbntModifier" />
+</androidx.constraintlayout.widget.ConstraintLayout>
